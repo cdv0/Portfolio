@@ -52,3 +52,23 @@ body {
     max-width: 450px;
     max-height: 300px;
 }
+
+/* Toolkit */
+.tools p {
+    border: 2px solid #ff7396;
+    display: inline-block;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+#toolkit {
+    margin: 50px;
+}
+
+#skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px
+}

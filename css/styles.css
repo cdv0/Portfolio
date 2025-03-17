@@ -24,3 +24,16 @@ body {
     font-size: 35px;
     color: #f05776;
 }
+
+/* Projects */
+.pacepal {
+    display: block;
+    background-color: #ffffff;
+    padding: 50px 120px;
+    border-radius: 5px;
+    box-shadow: 0 6px 14px rgba(0, 0,0, 0.2);
+    max-width: 100%;
+    width: 70vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+}

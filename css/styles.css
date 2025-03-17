@@ -12,3 +12,15 @@ body {
     width: 70%;
     margin: 0 auto;
 }
+
+/* Hero Section */
+#hero {
+    margin: 43vh 0;
+}
+
+#hero h1 {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #f05776;
+}

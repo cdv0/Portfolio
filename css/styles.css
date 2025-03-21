@@ -11,12 +11,12 @@ body {
     max-width: 1200px;
     width: 70%;
     margin: 0 auto;
-    gap: 100px;
+    gap: 5vw;
 }
 
 /* Hero Section */
 #hero {
-    margin: 43vh 0;
+    margin: 40vh 0;
 }
 
 #hero h1 {
@@ -54,12 +54,25 @@ body {
 
 #about-me-content {
     display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 50px
 }
 
-#about-me img {
+#text-aboutme {
+    flex: 1;
+}
+
+#image-aboutme {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#image-aboutme img {
+    width: 100%;
     max-width: 450px;
-    height: 300px;
+    height: auto;
 }
 
 /* Toolkit */
@@ -96,7 +109,7 @@ body {
 }
 
 #bubble-icon {
-    margin: 13px 13px;
+    margin: 13px;
 }
 
 /* Let's Connect */
@@ -119,7 +132,9 @@ body {
 }
 
 textarea {
-    width: 600px;
+    width: 80vw;
+    min-width: 450px;
+    max-width: 530px;
 }
 
 .small-textarea {
@@ -135,11 +150,57 @@ textarea {
 }
 
 #send-message {
-    width: 140px;
+    width: 27%;
+    max-width: 200px;
     background-color: #f05776;
     color: white;
     border-radius: 5px;
     border: none;
     padding: 10px;
     margin-bottom: 200px;
+}
+
+@media (max-width: 900px) {
+    #about-me-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #image-aboutme img {
+        max-width: 60vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+    body {
+        width: 95%;
+    }
+
+    #hero {
+        margin: 20vh 0;
+    }
+
+    #about-me-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #connect {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    textarea {
+        width: 95vw;
+    }
+
+    .pacepal {
+        padding: 30px;
+        width: 90vw;
+    }
+
+    #skill-container {
+        gap: 20px;
+    }
 }

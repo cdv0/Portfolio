@@ -93,3 +93,48 @@ body {
 .skill img {
     margin-bottom: 10px;
 }
+
+/* Let's Connect */
+
+#connect {
+    display: flex;
+    gap: 15%;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#button-row {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+textarea {
+    width: 600px;
+}
+
+.small-textarea {
+    height: 30px;
+}
+
+.big-textarea {
+    height: 175px
+}
+
+#right-connect {
+    gap: 20px;
+}
+
+#send-message {
+    width: 140px;
+    background-color: #f05776;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 200px;
+}

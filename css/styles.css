@@ -11,23 +11,55 @@ body {
     max-width: 1200px;
     width: 70%;
     margin: 0 auto;
-    gap: 5vw;
+    gap: 17vh;
+}
+
+button {
+    width: 27%;
+    max-width: 200px;
+    background-color: #f05776;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
 }
 
 /* Hero Section */
 #hero {
-    margin: 40vh 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 24vh 0;
 }
 
-#hero h1 {
+#intro-hero {
+    flex: 2;
+}
+
+#intro-hero h1 {
     display: block;
     margin-bottom: 20px;
     font-size: 35px;
     color: #f05776;
 }
 
+#image-hero {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#image-hero img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
 /* Projects */
-.pacepal {
+.card-project {
     display: block;
     background-color: #ffffff;
     padding: 50px 120px;
@@ -39,17 +71,31 @@ body {
     box-sizing: border-box;
 }
 
+.card-project p {
+    margin-bottom: 0;
+}
+
+.tools {
+    margin: 0 20px 20px 0;
+}
+
 .tools p {
     border: 2px solid #ff7396;
     display: inline-block;
-    margin: 5px;
-    padding: 3px;
+    padding: 4px;
     border-radius: 10px;
+    margin-right: 7px;
+}
+
+.button-project {
+    width: auto;
+    max-width: 200px;
+    margin-right: 6px;
 }
 
 /* About Me */
-#about-me {
-    margin: 80px 0;
+#about-me h2 {
+    margin-bottom: 0;
 }
 
 #about-me-content {
@@ -73,12 +119,12 @@ body {
     width: 100%;
     max-width: 450px;
     height: auto;
+    border-radius: 10px;;
 }
 
 /* Toolkit */
-
-#toolkit {
-    margin: 50px;
+#toolkit h2 {
+    margin-bottom: 30px;
 }
 
 #skill-container {
@@ -98,22 +144,11 @@ body {
     margin-bottom: 10px;
 }
 
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.skill img {
-    margin-bottom: 10px;
-}
-
 #bubble-icon {
     margin: 13px;
 }
 
 /* Let's Connect */
-
 #connect {
     display: flex;
     gap: 15%;
@@ -135,6 +170,8 @@ textarea {
     width: 80vw;
     min-width: 450px;
     max-width: 530px;
+    border: 2px solid #f057754a;
+    border-radius: 6px;
 }
 
 .small-textarea {
@@ -149,18 +186,19 @@ textarea {
     gap: 20px;
 }
 
-#send-message {
-    width: 27%;
-    max-width: 200px;
-    background-color: #f05776;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    margin-bottom: 200px;
-}
+/* Screens <= 900px */
 
 @media (max-width: 900px) {
+    #hero {
+        flex-direction: column;
+        gap: 30px;
+        margin: 15vh 0;
+    }
+
+    #image-hero img {
+        width: 250px;
+        height: 250px;
+    }
     #about-me-content {
         flex-direction: column;
         gap: 30px;
@@ -171,14 +209,16 @@ textarea {
     }
 }
 
-
+/* Screens <= 768px */
 @media (max-width: 768px) {
     body {
         width: 95%;
+        gap: 10vh;
+        font-size: 17px;
     }
 
     #hero {
-        margin: 20vh 0;
+        margin: 10vh 0;
     }
 
     #about-me-content {
@@ -195,7 +235,7 @@ textarea {
         width: 95vw;
     }
 
-    .pacepal {
+    .card-project {
         padding: 30px;
         width: 90vw;
     }

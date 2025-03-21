@@ -95,6 +95,10 @@ body {
     margin-bottom: 10px;
 }
 
+#bubble-icon {
+    margin: 13px 13px;
+}
+
 /* Let's Connect */
 
 #connect {

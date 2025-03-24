@@ -12,9 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div id="hero">
+    <div id="hero" data-aos="slide-up">
         <div id="intro-hero">
             <h1>Hello!<br>I'm Cathleen Vu. 👋</h1>
             <header>
@@ -29,7 +32,7 @@
 
     <div id="projects">
         <h2>Projects 🗂️</h2>
-        <div class="card-project">
+        <div class="card-project" data-aos="fade-left">
             <h3>PacePal</h3>
             <p>
                 PacePal is a mobile application that enables users to track their step counts within groups. It allows users to 
@@ -46,7 +49,7 @@
         </div>
     </div>
 
-    <div id="about-me">
+    <div id="about-me" data-aos="fade-up">
         <h2>About Me 🌸</h2>
         <div id="about-me-content">
             <div id="text-aboutme">
@@ -64,7 +67,7 @@
         </div>
     </div>
 
-    <div id="toolkit">
+    <div id="toolkit" data-aos="fade-up">
         <h2>My Toolkit 🖥️</h2>
         <div id="skill-container">
             <div class="skill">
@@ -134,7 +137,7 @@
         </div>
     </div>
 
-    <div id="connect">
+    <div id="connect" data-aos="slide-up">
         <div class="column" id="left-connect">
             <h2>Let's Connect! 💌</h2>
             <div id="button-row">
@@ -150,5 +153,11 @@
             <button id="send-message">SEND MESSAGE</button>
         </div>
     </div>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

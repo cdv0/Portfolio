@@ -202,6 +202,7 @@ textarea {
     max-width: 530px;
     border: 2px solid #f057754a;
     border-radius: 6px;
+    padding-top: 15px;
 }
 
 .small-textarea {

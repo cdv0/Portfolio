@@ -4,7 +4,7 @@ body {
     color: #333;
     letter-spacing: 0.4px;
     font-size: 18px;
-    background-color: #fff7f7;
+    background-color: #fffbfb;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,7 +55,7 @@ button {
     width: 260px;
     height: 260px;
     border-radius: 50%;
-    border: 2px solid black;
+    box-shadow: 0 6px 14px rgba(0, 0,0, 0.1);
 }
 
 /* Projects */
@@ -153,6 +153,11 @@ button {
     display: flex;
     gap: 15%;
     justify-content: center;
+    margin-bottom: 45vh;
+}
+
+#connect h2 {
+    margin-bottom: 20px;
 }
 
 .column {
@@ -162,7 +167,7 @@ button {
 
 #button-row {
     display: flex;
-    gap: 25px;
+    gap: 5vw;
     justify-content: center;
 }
 
@@ -229,10 +234,17 @@ textarea {
     #connect {
         flex-direction: column;
         gap: 40px;
+        margin-bottom: 15vh;
+    }
+
+    #button-row {
+        gap: 15vw;
+        justify-content: center;
     }
 
     textarea {
-        width: 95vw;
+        width: 94vw;
+        max-width: 94vw;
     }
 
     .card-project {

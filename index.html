@@ -17,16 +17,23 @@
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <div id="hero" data-aos="slide-up">
-        <div id="intro-hero">
-            <h1>Hello!<br>I'm Cathleen Vu. 👋</h1>
-            <header>
-                I am an aspiring Software Developer specializing in mobile and web applications.
-                My passion is building impactful and meaningful software that solves problems and enhances user experiences.
-            </header>
+    <div id="hero-section">
+        <div id="hero" data-aos="slide-up">
+            <div id="intro-hero">
+                <h1>Hello!<br>I'm Cathleen Vu. 👋</h1>
+                <header>
+                    I am an aspiring Software Developer specializing in mobile and web applications.
+                    My passion is building impactful and meaningful software that solves problems and enhances user experiences.
+                </header>
+            </div>
+            <div id="image-hero">
+                <img src="assets/my-notion-face-portrait.png" alt="Cathleen Vu's cartoon picture from Notion">
+            </div>
         </div>
-        <div id="image-hero">
-            <img src="assets/my-notion-face-portrait.png" alt="Cathleen Vu's cartoon picture from Notion">
+
+        <!-- Scroll Down Image -->
+        <div id="scroll-down" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });">
+            <img src="assets/arrow-down.png" alt="Scroll down"/>
         </div>
     </div>
 

@@ -22,6 +22,7 @@ button {
     border-radius: 5px;
     border: none;
     padding: 10px;
+    cursor: pointer;
 }
 
 /* Hero Section */
@@ -29,7 +30,7 @@ button {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 24vh 0;
+    margin: 23vh 0 39vh 0;
 }
 
 #intro-hero {
@@ -56,6 +57,30 @@ button {
     height: 260px;
     border-radius: 50%;
     box-shadow: 0 6px 14px rgba(0, 0,0, 0.1);
+}
+
+#scroll-down {
+    display: flex;
+    justify-content: center;
+}
+
+#scroll-down img {
+    width: 30px;
+    height: 30px;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-14px);
+    }
+    60% {
+        transform: translateY(-8px);
+    }
 }
 
 /* Projects */
@@ -153,7 +178,7 @@ button {
     display: flex;
     gap: 15%;
     justify-content: center;
-    margin-bottom: 45vh;
+    margin-bottom: 25vh;
 }
 
 #connect h2 {
@@ -197,7 +222,7 @@ textarea {
     #hero {
         flex-direction: column;
         gap: 30px;
-        margin: 15vh 0;
+        margin: 15vh 0 17vh 0;
     }
 
     #image-hero img {
@@ -223,7 +248,7 @@ textarea {
     }
 
     #hero {
-        margin: 10vh 0;
+        margin: 10vh 0 22vh 0;
     }
 
     #about-me-content {

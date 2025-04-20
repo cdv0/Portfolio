@@ -217,6 +217,14 @@ textarea {
     gap: 20px;
 }
 
+#thank-you {
+    display: none;
+    margin-top: 1rem;
+    color: #4caf50;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }  
+
 /* Screens <= 900px */
 
 @media (max-width: 900px) {

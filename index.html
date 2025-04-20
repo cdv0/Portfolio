@@ -52,7 +52,8 @@
                 <p>Firebase</p>
                 <p>HealthKit</p>
             </div>
-            <button class="button-project">Live Demo</button> <a href="https://github.com/cdv0/PacePal"><button class="button-project">View Source</button></a>
+            <!-- <button class="button-project">Live Demo</button>  -->
+            <a href="https://github.com/cdv0/PacePal" target="_blank"><button class="button-project">View Source</button></a>
         </div>
     </div>
 
@@ -60,7 +61,7 @@
         <h2>About Me 🌸</h2>
         <div id="about-me-content">
             <div id="text-aboutme">
-                <p>I'm currently a Computer Science student as California State University, Long Beach, expecting to graduate in May 2026. 
+                <p>I'm currently a Computer Science student as California State University, Long Beach, expecting to graduate in Winter 2025. 
                     I started my journey in software development after transitioning from Biology to Computer Science, and I've been passionate 
                     about building meaningful and engaging applications ever since. My primary focus is iOS mobile applications, with plans to explore Android
                     mobile development as well. <br> <br>
@@ -153,12 +154,12 @@
             </div>
         </div>
 
-        <div class="column" id="right-connect">
-            <textarea class="small-textarea" placeholder="name"></textarea>
-            <textarea class="small-textarea" placeholder="email"></textarea>
-            <textarea class="big-textarea" placeholder="message"></textarea>
-            <button id="send-message">SEND MESSAGE</button>
-        </div>
+        <form action="https://formspree.io/f/xgvagpke" method="POST" id="right-connect" class="column">
+                <textarea class="small-textarea" name="name" placeholder="name" required></textarea>
+                <textarea class="small-textarea" name="email" type="email" placeholder="email" required></textarea>
+                <textarea class="big-textarea" name="message" placeholder="message" required></textarea>
+                <button type="submit" id="send-message">SEND MESSAGE</button>
+        </form>          
     </div>
 
     <!-- AOS JS -->
